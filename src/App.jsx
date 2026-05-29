@@ -2,6 +2,7 @@ import Navbar from "@/components/layout/Navbar"
 import Footer from "@/components/layout/Footer"
 import Hero from "@/sections/Hero"
 import About from "@/sections/About"
+import Skills from "@/sections/Skills"
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <main className="flex-1 pt-16">
         <Hero />
         <About />
+        <Skills />
       </main>
       <Footer />
     </div>
