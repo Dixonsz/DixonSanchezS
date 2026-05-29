@@ -3,6 +3,7 @@ import Footer from "@/components/layout/Footer"
 import Hero from "@/sections/Hero"
 import About from "@/sections/About"
 import Skills from "@/sections/Skills"
+import Projects from "@/sections/Projects"
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <Hero />
         <About />
         <Skills />
+        <Projects />
       </main>
       <Footer />
     </div>

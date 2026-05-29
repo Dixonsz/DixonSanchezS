@@ -75,3 +75,24 @@ export const SKILLS = [
     ],
   },
 ]
+
+export const PROJECTS = [
+  {
+    id: 1,
+    title: "Motors — Taller Automotriz",
+    description: "Full stack system for automotive workshop management. Includes modules for scheduling, authentication, inventory, services, and vehicle registration.",
+    tech: ["Django", "MySQL", "Redis", "Cloudinary", "Docker"],
+    github: "https://github.com/Dixonsz/motors.git",
+    image: null, // reemplaza con screenshot cuando tengas
+    color: "from-blue-50 to-blue-100",
+  },
+  {
+    id: 2,
+    title: "Zybus — Backend API",
+    description: "REST API for a bus transport management system. Built with Hexagonal Architecture, DDD and CQRS on async FastAPI with JWT auth and Redis caching.",
+    tech: ["Python", "FastAPI", "MySQL", "Redis", "Docker"],
+    github: "https://github.com/FallasDev/Zybus-Backend.git",
+    image: null,
+    color: "from-violet-50 to-violet-100",
+  },
+]
