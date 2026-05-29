@@ -22,3 +22,19 @@ export const PERSONAL_INFO = {
   },
   availability: true, 
 }
+
+export const ABOUT_INFO = {
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+  passion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  education: {
+    degree: "Lorem Ipsum in Computer Science",
+    institution: "Universidad Lorem Ipsum",
+    year: "2022 - 2024",
+  },
+  stats: [
+    { label: "Years Learning", value: "2+" },
+    { label: "Projects Built", value: "10+" },
+    { label: "Technologies", value: "15+" },
+    { label: "Cups of Coffee", value: "∞" },
+  ],
+}
