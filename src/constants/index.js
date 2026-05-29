@@ -79,7 +79,7 @@ export const SKILLS = [
 export const PROJECTS = [
   {
     id: 1,
-    title: "Motors — Taller Automotriz",
+    title: "Motors — Automotive Workshop",
     description: "Full stack system for automotive workshop management. Includes modules for scheduling, authentication, inventory, services, and vehicle registration.",
     tech: ["Django", "MySQL", "Redis", "Cloudinary", "Docker"],
     github: "https://github.com/Dixonsz/motors.git",
@@ -96,3 +96,8 @@ export const PROJECTS = [
     color: "from-violet-50 to-violet-100",
   },
 ]
+
+export const CONTACT_INFO = {
+  email: "Dixonsanchezsoza@gmail.com",
+  formEndpoint: "https://formspree.io/f/meedndok", // reemplaza con tu endpoint
+}
