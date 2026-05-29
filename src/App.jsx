@@ -1,7 +1,15 @@
+import Navbar from "@/components/layout/Navbar"
+import Footer from "@/components/layout/Footer"
+import Hero from "@/sections/Hero"
+
 const App = () => {
   return (
-    <div>
-      <h1 className="text-3xl font-bold text-center">Mi Portafolio</h1>
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+      <main className="flex-1 pt-16">
+        <Hero />
+      </main>
+      <Footer />
     </div>
   )
 }
