@@ -1,9 +1,11 @@
+import { useTranslation } from "react-i18next"
 import useFadeIn from "@/hooks/useFadeIn"
 import SkillCard from "@/components/ui/SkillCard"
 import { SKILLS } from "@/constants"
 
 const Skills = () => {
   const fade = useFadeIn(100)
+  const { t } = useTranslation()
 
   return (
     <section id="skills" className="py-24 px-6">
@@ -12,9 +14,11 @@ const Skills = () => {
         {/* Título */}
         <div className="mb-16">
           <p className="text-sm font-medium text-gray-500 tracking-widest uppercase mb-2">
-            What I work with
+            {t("skills.subtitle")}
           </p>
-          <h2 className="text-4xl font-bold text-gray-900">Skills</h2>
+          <h2 className="text-4xl font-bold text-gray-900">
+            {t("skills.title")}
+          </h2>
         </div>
 
         {/* Categorías */}

@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { useTranslation } from "react-i18next"
 import useFadeIn from "@/hooks/useFadeIn"
 import { CONTACT_INFO, SOCIAL_LINKS } from "@/constants"
 
@@ -16,8 +17,9 @@ const LinkedinIcon = () => (
 
 const Contact = () => {
   const fade = useFadeIn(100)
+  const { t } = useTranslation()
   const [formState, setFormState] = useState({ name: "", email: "", message: "" })
-  const [status, setStatus] = useState("idle") // idle | sending | success | error
+  const [status, setStatus] = useState("idle")
 
   const handleChange = (e) => {
     setFormState({ ...formState, [e.target.name]: e.target.value })
@@ -52,9 +54,11 @@ const Contact = () => {
         {/* Título */}
         <div className="mb-16">
           <p className="text-sm font-medium text-gray-500 tracking-widest uppercase mb-2">
-            Get in touch
+            {t("contact.subtitle")}
           </p>
-          <h2 className="text-4xl font-bold text-gray-900">Contact</h2>
+          <h2 className="text-4xl font-bold text-gray-900">
+            {t("contact.title")}
+          </h2>
         </div>
 
         <div
@@ -66,7 +70,7 @@ const Contact = () => {
           {/* Izquierda — Info */}
           <div className="flex flex-col gap-8">
             <p className="text-gray-600 text-lg leading-relaxed">
-              I'm currently open to new opportunities. Whether you have a question or just want to say hi, feel free to reach out!
+              {t("contact.description")}
             </p>
 
             <div className="flex flex-col gap-4">
@@ -78,7 +82,8 @@ const Contact = () => {
               </a>
 
               <div className="flex items-center gap-4 pt-2">
-                <a
+
+               <a 
                   href={SOCIAL_LINKS.github}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -87,7 +92,8 @@ const Contact = () => {
                 >
                   <GithubIcon />
                 </a>
-                <a
+
+                <a 
                   href={SOCIAL_LINKS.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -102,41 +108,48 @@ const Contact = () => {
 
           {/* Derecha — Formulario */}
           <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+
             <div className="flex flex-col gap-1">
-              <label className="text-sm font-medium text-gray-700">Name</label>
+              <label className="text-sm font-medium text-gray-700">
+                {t("contact.form.name")}
+              </label>
               <input
                 type="text"
                 name="name"
                 value={formState.name}
                 onChange={handleChange}
                 required
-                placeholder="John Doe"
+                placeholder={t("contact.form.name_placeholder")}
                 className="px-4 py-3 rounded-xl border border-gray-200 text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-gray-300 transition"
               />
             </div>
 
             <div className="flex flex-col gap-1">
-              <label className="text-sm font-medium text-gray-700">Email</label>
+              <label className="text-sm font-medium text-gray-700">
+                {t("contact.form.email")}
+              </label>
               <input
                 type="email"
                 name="email"
                 value={formState.email}
                 onChange={handleChange}
                 required
-                placeholder="john@email.com"
+                placeholder={t("contact.form.email_placeholder")}
                 className="px-4 py-3 rounded-xl border border-gray-200 text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-gray-300 transition"
               />
             </div>
 
             <div className="flex flex-col gap-1">
-              <label className="text-sm font-medium text-gray-700">Message</label>
+              <label className="text-sm font-medium text-gray-700">
+                {t("contact.form.message")}
+              </label>
               <textarea
                 name="message"
                 value={formState.message}
                 onChange={handleChange}
                 required
                 rows={5}
-                placeholder="Your message..."
+                placeholder={t("contact.form.message_placeholder")}
                 className="px-4 py-3 rounded-xl border border-gray-200 text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-gray-300 transition resize-none"
               />
             </div>
@@ -146,21 +159,21 @@ const Contact = () => {
               disabled={status === "sending"}
               className="px-6 py-3 bg-gray-900 text-white text-sm font-medium rounded-xl hover:bg-gray-700 transition-colors duration-200 disabled:opacity-50"
             >
-              {status === "sending" ? "Sending..." : "Send Message"}
+              {status === "sending" ? t("contact.form.sending") : t("contact.form.submit")}
             </button>
 
             {status === "success" && (
               <p className="text-sm text-green-600 font-medium">
-                ✓ Message sent successfully!
+                ✓ {t("contact.form.success")}
               </p>
             )}
             {status === "error" && (
               <p className="text-sm text-red-500 font-medium">
-                Something went wrong. Please try again.
+                {t("contact.form.error")}
               </p>
             )}
-          </form>
 
+          </form>
         </div>
       </div>
     </section>

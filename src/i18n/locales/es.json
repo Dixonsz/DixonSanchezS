@@ -1,0 +1,59 @@
+{
+  "nav": {
+    "about": "Sobre mí",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "role": "Desarrollador Full Stack Junior",
+    "description": "Desarrollador Full Stack Junior especializado en Python y React, con experiencia liderando arquitecturas backend basadas en Clean Architecture y Arquitectura Hexagonal. Busco mi primera oportunidad profesional para seguir aprendiendo y aportar valor desde el primer día."
+  },
+  "about": {
+    "subtitle": "Conóceme",
+    "title": "Sobre mí",
+    "description": "Soy un Desarrollador Full Stack Junior especializado en Python y React, con experiencia liderando arquitecturas backend basadas en Clean Architecture y Arquitectura Hexagonal. He aplicado mis conocimientos en proyectos de Acción Social (TCU) y entornos universitarios, trabajando en equipo para resolver necesidades reales con código.",
+    "passion_title": "Lo que me apasiona",
+    "passion": "Me apasiona construir software bien estructurado y mantenible. Disfruto diseñar APIs limpias, aplicar patrones de arquitectura sólidos y mejorar continuamente mis habilidades para entregar valor real a través del código.",
+    "education_label": "Educación",
+    "education_degree": "Bachillerato en Informática Empresarial",
+    "education_institution": "Universidad de Costa Rica (UCR)",
+    "education_year": "En curso",
+    "stats": {
+      "years": "Años aprendiendo",
+      "projects": "Proyectos realizados",
+      "technologies": "Tecnologías",
+      "coffee": "Tazas de café"
+    }
+  },
+  "skills": {
+    "subtitle": "Con qué trabajo",
+    "title": "Habilidades"
+  },
+  "projects": {
+    "subtitle": "Lo que he construido",
+    "title": "Proyectos",
+    "github": "Ver en GitHub"
+  },
+  "contact": {
+    "subtitle": "Hablemos",
+    "title": "Contacto",
+    "description": "Estoy abierto a nuevas oportunidades. Si tienes alguna pregunta o simplemente quieres saludar, ¡no dudes en escribirme!",
+    "form": {
+      "name": "Nombre",
+      "email": "Correo",
+      "message": "Mensaje",
+      "name_placeholder": "Juan Pérez",
+      "email_placeholder": "juan@correo.com",
+      "message_placeholder": "Tu mensaje...",
+      "submit": "Enviar mensaje",
+      "sending": "Enviando...",
+      "success": "¡Mensaje enviado correctamente!",
+      "error": "Algo salió mal. Por favor intenta de nuevo."
+    }
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados."
+  }
+}

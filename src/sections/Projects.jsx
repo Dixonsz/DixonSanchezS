@@ -1,9 +1,11 @@
+import { useTranslation } from "react-i18next"
 import useFadeIn from "@/hooks/useFadeIn"
 import ProjectCard from "@/components/ui/ProjectCard"
 import { PROJECTS } from "@/constants"
 
 const Projects = () => {
   const fade = useFadeIn(100)
+  const { t } = useTranslation()
 
   return (
     <section id="projects" className="py-24 px-6 bg-gray-50">
@@ -12,9 +14,11 @@ const Projects = () => {
         {/* Título */}
         <div className="mb-16">
           <p className="text-sm font-medium text-gray-500 tracking-widest uppercase mb-2">
-            What I've built
+            {t("projects.subtitle")}
           </p>
-          <h2 className="text-4xl font-bold text-gray-900">Projects</h2>
+          <h2 className="text-4xl font-bold text-gray-900">
+            {t("projects.title")}
+          </h2>
         </div>
 
         {/* Grid */}

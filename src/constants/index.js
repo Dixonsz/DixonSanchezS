@@ -1,42 +1,48 @@
 export const NAV_LINKS = [
-    {label: 'About', href: '#about'},
-    {label: 'Skills', href: '#skills'},
-    {label: 'Projects', href: '#projects'},
-    {label: 'Contact', href: '#contact'}
-];
+  { label: "nav.about", href: "#about" },
+  { label: "nav.skills", href: "#skills" },
+  { label: "nav.projects", href: "#projects" },
+  { label: "nav.contact", href: "#contact" },
+]
 
-export const SOCIAL_LINKS = [
-    {label: 'GitHub', href: 'https://github.com/dixonsanchezs'},
-    {label: 'LinkedIn', href: 'https://www.linkedin.com/in/dixon-sanchez/'},
-    {label: 'Email', href: 'mailto:dixon.sanchez.soza@gmail.com'},
-    {label: 'CV', href: '#cv'}
-];
+export const SOCIAL_LINKS = {
+  github: "https://github.com/Dixonsz",
+  linkedin: "https://www.linkedin.com/in/dixon-sanchez/",
+}
 
 export const PERSONAL_INFO = {
   name: "Dixon Sánchez Soza",
-  role: "Full Stack Developer",
+  role: "Full Stack Developer Junior",
+  location: "San José, Costa Rica",
+  phone: "+506 8894-0261",
   email: "Dixonsanchezsoza@gmail.com",
   description: {
-    short: "Full Stack Developer passionate about building clean, scalable web applications.",
-    long: "Passionate about creating innovative solutions and continuously learning new technologies. With a strong background in both front-end and back-end development, I thrive in dynamic environments where I can contribute to impactful projects.",
+    short: "Full Stack Developer Junior passionate about building clean, scalable web applications with Python and React.",
+    long: "Full Stack Developer Junior. Python (FastAPI/Django) & React. Experienced leading backend architectures based on Clean Architecture and Hexagonal Architecture. Proficient in professional workflows: documented APIs, testing with pytest/Postman and Scrum methodologies. Looking for my first professional opportunity in a Costa Rican startup to keep learning and contribute value to the team from day one.",
   },
-  availability: true, 
+  availability: true,
+  cvUrl: "/CV_Dixon_Sanchez_Soza_FullStack_Junior.pdf",
 }
 
 export const ABOUT_INFO = {
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-  passion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  description: "I'm a Full Stack Developer Junior specialized in Python and React, with experience leading backend architectures based on Clean Architecture and Hexagonal Architecture. I've applied my knowledge in Social Action (TCU) projects and university environments, working in teams to solve real needs with code.",
+  passion: "I'm passionate about building well-structured, maintainable software. I enjoy designing clean APIs, applying solid architecture patterns and continuously improving my skills to deliver real value through code.",
   education: {
-    degree: "Lorem Ipsum in Computer Science",
-    institution: "Universidad Lorem Ipsum",
-    year: "2022 - 2024",
+    degree: "Bachelor's in Business Informatics",
+    institution: "Universidad de Costa Rica (UCR)",
+    year: "In progress",
+    relevant: "Software Engineering, Architecture & Infrastructure, Project Management, Systems Analysis & Design",
   },
-  stats: [
-    { label: "Years Learning", value: "2+" },
-    { label: "Projects Built", value: "10+" },
-    { label: "Technologies", value: "15+" },
-    { label: "Cups of Coffee", value: "∞" },
+  languages: [
+    { lang: "Spanish", level: "Native" },
+    { lang: "English", level: "Technical reading fluent, A2 conversational (actively improving)" },
   ],
+ stats: [
+  { label: "stats.years", value: "2+" },
+  { label: "stats.projects", value: "2+" },
+  { label: "stats.technologies", value: "15+" },
+  { label: "stats.coffee", value: "∞" },
+],
 }
 
 export const SKILLS = [
@@ -54,11 +60,14 @@ export const SKILLS = [
     category: "Backend",
     items: [
       { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+      { name: "FastAPI", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" },
+      { name: "Django", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" },
+      { name: "Flask", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" },
       { name: "Java", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
     ],
   },
   {
-    category: "Base de datos",
+    category: "Database",
     items: [
       { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
       { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
@@ -72,6 +81,14 @@ export const SKILLS = [
       { name: "GitHub", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
       { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
       { name: "VS Code", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
+      { name: "Jira", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" },
+    ],
+  },
+  {
+    category: "Testing / API",
+    items: [
+      { name: "pytest", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytest/pytest-original.svg" },
+      { name: "Postman", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" },
     ],
   },
 ]
@@ -80,17 +97,17 @@ export const PROJECTS = [
   {
     id: 1,
     title: "Motors — Automotive Workshop",
-    description: "Full stack system for automotive workshop management. Includes modules for scheduling, authentication, inventory, services, and vehicle registration.",
-    tech: ["Django", "MySQL", "Redis", "Cloudinary", "Docker"],
+    description: "Full stack system for automotive workshop management. Includes modules for scheduling, authentication, inventory, services, and vehicle registration. Deployed on Railway.",
+    tech: ["Django", "MySQL", "Redis", "Cloudinary", "Docker", "Tailwind CSS"],
     github: "https://github.com/Dixonsz/motors.git",
-    image: null, // reemplaza con screenshot cuando tengas
+    image: null,
     color: "from-blue-50 to-blue-100",
   },
   {
     id: 2,
     title: "Zybus — Backend API",
-    description: "REST API for a bus transport management system. Built with Hexagonal Architecture, DDD and CQRS on async FastAPI with JWT auth and Redis caching.",
-    tech: ["Python", "FastAPI", "MySQL", "Redis", "Docker"],
+    description: "REST API for a bus transport management system. Built with Hexagonal Architecture, DDD and CQRS on async FastAPI with JWT auth, Redis caching and automated testing with pytest.",
+    tech: ["Python", "FastAPI", "MySQL", "Redis", "Docker", "pytest"],
     github: "https://github.com/FallasDev/Zybus-Backend.git",
     image: null,
     color: "from-violet-50 to-violet-100",
@@ -99,5 +116,5 @@ export const PROJECTS = [
 
 export const CONTACT_INFO = {
   email: "Dixonsanchezsoza@gmail.com",
-  formEndpoint: "https://formspree.io/f/meedndok", // reemplaza con tu endpoint
+  formEndpoint: "https://formspree.io/f/meedndok",
 }
