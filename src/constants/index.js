@@ -101,7 +101,7 @@ export const PROJECTS = [
     description: "Full stack system for automotive workshop management. Includes modules for scheduling, authentication, inventory, services, and vehicle registration. Deployed on Railway.",
     tech: ["Django", "MySQL", "Redis", "Cloudinary", "Docker", "Tailwind CSS"],
     github: "https://github.com/Dixonsz/motors.git",
-    image: "/public/images/proyects/motors.png",
+    image: "https://res.cloudinary.com/dlbonrawd/image/upload/v1780107227/Screenshot_2026-05-29_190207_h2ttl5.png",
     color: "from-blue-50 to-blue-100",
   },
   {
@@ -110,7 +110,7 @@ export const PROJECTS = [
     description: "REST API for a bus transport management system. Built with Hexagonal Architecture, DDD and CQRS on async FastAPI with JWT auth, Redis caching and automated testing with pytest.",
     tech: ["Python", "FastAPI", "MySQL", "Redis", "Docker", "pytest"],
     github: "https://github.com/FallasDev/Zybus-Backend.git",
-    image: "/public/images/proyects/zybus.png",
+    image: "https://res.cloudinary.com/dlbonrawd/image/upload/v1780107228/Screenshot_2026-05-29_191600_jhmfh7.png",
     color: "from-violet-50 to-violet-100",
   },
 ]
