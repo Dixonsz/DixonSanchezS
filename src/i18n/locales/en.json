@@ -8,7 +8,8 @@
   "hero": {
     "greeting": "Hello, I'm",
     "role": "Full Stack Developer Junior",
-    "description": "Full Stack Developer Junior specialized in Python and React, with experience leading backend architectures based on Clean Architecture and Hexagonal Architecture. Looking for my first professional opportunity to keep learning and contribute value from day one."
+    "description": "Full Stack Developer Junior specialized in Python and React, with experience leading backend architectures based on Clean Architecture and Hexagonal Architecture. Looking for my first professional opportunity to keep learning and contribute value from day one.",
+    "cv": "Download CV" 
   },
   "about": {
     "subtitle": "Get to know me",

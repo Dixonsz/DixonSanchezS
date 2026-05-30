@@ -8,6 +8,7 @@ export const NAV_LINKS = [
 export const SOCIAL_LINKS = {
   github: "https://github.com/Dixonsz",
   linkedin: "https://www.linkedin.com/in/dixon-sanchez/",
+  email: "Dixonsanchezsoza@gmail.com"
 }
 
 export const PERSONAL_INFO = {
@@ -21,7 +22,7 @@ export const PERSONAL_INFO = {
     long: "Full Stack Developer Junior. Python (FastAPI/Django) & React. Experienced leading backend architectures based on Clean Architecture and Hexagonal Architecture. Proficient in professional workflows: documented APIs, testing with pytest/Postman and Scrum methodologies. Looking for my first professional opportunity in a Costa Rican startup to keep learning and contribute value to the team from day one.",
   },
   availability: true,
-  cvUrl: "/CV_Dixon_Sanchez_Soza_FullStack_Junior.pdf",
+  cvUrl: "/cv/CV_Dixon_Sanchez_Soza_FullStack_Junior.pdf",
 }
 
 export const ABOUT_INFO = {
@@ -100,7 +101,7 @@ export const PROJECTS = [
     description: "Full stack system for automotive workshop management. Includes modules for scheduling, authentication, inventory, services, and vehicle registration. Deployed on Railway.",
     tech: ["Django", "MySQL", "Redis", "Cloudinary", "Docker", "Tailwind CSS"],
     github: "https://github.com/Dixonsz/motors.git",
-    image: null,
+    image: "/public/images/proyects/motors.png",
     color: "from-blue-50 to-blue-100",
   },
   {
@@ -109,7 +110,7 @@ export const PROJECTS = [
     description: "REST API for a bus transport management system. Built with Hexagonal Architecture, DDD and CQRS on async FastAPI with JWT auth, Redis caching and automated testing with pytest.",
     tech: ["Python", "FastAPI", "MySQL", "Redis", "Docker", "pytest"],
     github: "https://github.com/FallasDev/Zybus-Backend.git",
-    image: null,
+    image: "/public/images/proyects/zybus.png",
     color: "from-violet-50 to-violet-100",
   },
 ]
@@ -117,4 +118,5 @@ export const PROJECTS = [
 export const CONTACT_INFO = {
   email: "Dixonsanchezsoza@gmail.com",
   formEndpoint: "https://formspree.io/f/meedndok",
+  cvUrl: "/cv/CV_Dixon_Sanchez_Soza_FullStack_Junior.pdf",
 }

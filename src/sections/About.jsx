@@ -8,10 +8,9 @@ const About = () => {
   const { t } = useTranslation()
 
   const stats = [
-    { key: "stats.years", value: "2+" },
-    { key: "stats.projects", value: "2+" },
+    { key: "stats.years", value: "4+" },
+    { key: "stats.projects", value: "5+" },
     { key: "stats.technologies", value: "15+" },
-    { key: "stats.coffee", value: "∞" },
   ]
 
   return (
